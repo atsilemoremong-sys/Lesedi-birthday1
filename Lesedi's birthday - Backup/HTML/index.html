@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Lesedi's Library</title>
+
+    <link rel="stylesheet" href="CSS/style.css">
+
+</head>
+
+
+<body>
+
+
+<div class="birthday-banner">
+
+    ★ H A P P Y &nbsp; B I R T H D A Y ★
+
+</div>
+<div class="countdown-box">
+
+    <h2>
+        🎂 Countdown 🎂
+    </h2>
+
+    <p>
+        Until your special day 💗
+    </p>
+
+
+    <div class="countdown">
+
+        <span>
+            <b id="days">0</b>
+            Days
+        </span>
+
+
+        <span>
+            <b id="hours">0</b>
+            Hours
+        </span>
+
+
+        <span>
+            <b id="minutes">0</b>
+            Minutes
+        </span>
+
+
+        <span>
+            <b id="seconds">0</b>
+            Seconds
+        </span>
+
+    </div>
+
+</div>
+
+
+<div class="lock-case">
+
+
+    <div class="lock-header">
+
+        ☠ ★ ✦ SECRET ARCHIVE ✦ ★ ☠
+
+    </div>
+
+
+
+    <div class="lock-screen">
+
+
+        <h1>
+            ☠★ Lesedi's Library ★☠
+        </h1>
+
+
+        <p>
+            A secret place made just for you 💗
+        </p>
+
+
+        <p class="hint">
+            Enter the secret code to unlock the memories ✦
+        </p>
+
+
+
+        <input 
+        type="password"
+        id="password"
+        placeholder="Password">
+
+
+
+        <button onclick="unlock()">
+
+            ENTER
+
+        </button>
+
+
+    </div>
+
+
+</div>
+
+
+
+
+<script>
+
+function unlock(){
+
+    let password = document.getElementById("password").value;
+
+
+    if(password === "LesediGemmaGraham12"){
+
+        window.location.href="home.html";
+
+    }
+
+    else{
+
+        alert("Wrong password ☠ Try again");
+
+    }
+
+}
+
+
+</script>
+<script src="JS/countdown.js"></script>
+
+</body>
+
+</html>
